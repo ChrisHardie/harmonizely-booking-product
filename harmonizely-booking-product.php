@@ -15,7 +15,7 @@
  * Plugin Name:       Harmonizely Booking Product
  * Plugin URI:
  * Description:       Creates a Harmonizely appointment booking product type for WooCommerce
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Chris Hardie
  * Author URI:        https://chrishardie.com/
  * License:           GPL-2.0+
@@ -33,7 +33,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Current plugin version.
  * Start at version 1.0.0 and use SemVer - https://semver.org
  */
-define( 'HARMONIZELY_BOOKING_PRODUCT_VERSION', '1.0.0' );
+define( 'HARMONIZELY_BOOKING_PRODUCT_VERSION', '1.0.1' );
 define( 'HARMONIZELY_API_BASE', 'https://harmonizely.com/api' );
 
 /**
