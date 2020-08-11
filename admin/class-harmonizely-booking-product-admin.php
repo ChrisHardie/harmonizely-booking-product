@@ -400,19 +400,26 @@ class Harmonizely_Booking_Product_Admin {
 
 		$meeting_types = get_option( 'hbp_harmonizely_meeting_types' );
 
-		$meeting_types = array( '' => __( 'Select a meeting type', 'harmonizely-booking-product' ) ) + $meeting_types;
+		if ( ! empty( $meeting_types ) ) {
+			$meeting_types = array_merge(
+				array( '' => __( 'Select a meeting type', 'harmonizely-booking-product' ) ),
+				$meeting_types
+			);
 
-		woocommerce_wp_select(
-			array(
-				'id'                => '_harmonizely_meeting_type',
-				'label'             => __( 'Meeting Type', 'harmonizely-booking-product' ),
-				'options'           => $meeting_types,
-				'placeholder'       => '',
-				'custom_attributes' => array( 'required' => 'required' ),
-				'desc_tip'          => 'true',
-				'description'       => __( 'Select the Harmonizely Meeting Type that the purchase of this product will grant access to.', 'harmonizely-booking-product' ),
-			)
-		);
+			woocommerce_wp_select(
+				array(
+					'id'                => '_harmonizely_meeting_type',
+					'label'             => __( 'Meeting Type', 'harmonizely-booking-product' ),
+					'options'           => $meeting_types,
+					'placeholder'       => '',
+					'custom_attributes' => array( 'required' => 'required' ),
+					'desc_tip'          => 'true',
+					'description'       => __( 'Select the Harmonizely Meeting Type that the purchase of this product will grant access to.', 'harmonizely-booking-product' ),
+				)
+			);
+		} else {
+			echo '<p>' . __( 'No meeting types were found. Please check your Harmonizely configuration.', 'harmonizely-booking-product' ) . '</p>';
+		}
 
 		echo '</div></div>';
 
