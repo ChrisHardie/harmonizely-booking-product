@@ -1,7 +1,7 @@
 === Harmonizely Booking Product ===
 Contributors: chrishardie, takeittt
 Donate link: https://chrishardie.com/refer/donate
-Tags: harmonizely, booking, appointment, woocommerce
+Tags: harmonizely, booking, appointment, woocommerce, adopt-me
 Requires at least: 5.0
 Requires PHP: 7.2
 Tested up to: 5.8
@@ -12,6 +12,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Creates a Harmonizely appointment booking product type for WooCommerce.
 
 == Description ==
+
+**NO LONGER SUPPORTED**: This plugin is no longer actively maintained or supported, and may be closed soon. [Read the announcement](https://tech.chrishardie.com/2022/ending-support-wordpress-plugins/).
 
 Harmonizely is a service that allows you to connect your calendar and allow people to easily schedule appointments with you. The Harmonizely Booking Product plugin for WordPress and WooCommerce enables selling access to Harmonizely appointment scheduling. You create an appointment booking product in WooCommerce, set the price and choose which Harmonizely meeting type to use. Then, your customers can pay for an appointment and use a personalized, one-time scheduling link to complete the scheduling process.
 
